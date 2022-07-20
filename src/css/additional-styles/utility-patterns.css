@@ -1,0 +1,80 @@
+/* Typography */
+.h1 {
+  @apply text-4xl font-extrabold leading-tight tracking-tighter;
+}
+
+.h2 {
+  @apply text-3xl font-extrabold leading-tight tracking-tighter;
+}
+
+.h3 {
+  @apply text-3xl font-bold leading-tight;
+}
+
+.h4 {
+  @apply text-2xl font-bold leading-snug tracking-tight;
+}
+
+@screen md {
+  .h1 {
+    @apply text-5xl;
+  }
+
+  .h2 {
+    @apply text-4xl;
+  }
+}
+
+/* Buttons */
+.btn,
+.btn-sm {
+  @apply font-medium inline-flex items-center justify-center border border-transparent rounded leading-snug transition duration-150 ease-in-out;
+}
+
+.btn {
+  @apply px-8 py-3 shadow-lg;
+}
+
+.btn-sm {
+  @apply px-4 py-2 shadow;
+}
+
+/* cards */
+.wrapper {
+  @apply bg-white hover:bg-gray-200 shadow-xl hover:shadow-none cursor-pointer rounded-3xl flex flex-col flex-shrink-0;
+}
+
+.wrapperAnime {
+  @apply transition-all duration-500 ease-in-out;
+}
+
+.header {
+  @apply relative mt-3 mx-2;
+}
+
+.imageWrapper {
+  @apply h-32 rounded-2xl overflow-hidden;
+}
+
+.image {
+  @apply object-cover w-full h-full;
+}
+
+.textWrapper {
+  @apply pt-5 pb-4 w-full px-4;
+}
+
+.text {
+  @apply font-medium leading-none text-base tracking-wider text-gray-400;
+}
+
+.badgeWrapper {
+  @apply absolute bottom-0 left-0 -mb-4 ml-3 flex flex-row;
+}
+.hide-scroll-bar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.hide-scroll-bar::-webkit-scrollbar {
+  display: none;
+}
