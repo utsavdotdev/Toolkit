@@ -41,7 +41,7 @@
 
 /* cards */
 .wrapper {
-  @apply bg-white hover:bg-gray-200 shadow-xl hover:shadow-none cursor-pointer rounded-3xl flex flex-col flex-shrink-0;
+  @apply bg-[#2C3639] hover:bg-[#2C3639] shadow-xl hover:shadow-none cursor-pointer rounded-3xl flex flex-col flex-shrink-0;
 }
 
 .wrapperAnime {

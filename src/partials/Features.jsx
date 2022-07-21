@@ -66,7 +66,7 @@ function Features() {
                 <div className="border-0 rounded-lg relative flex flex-col w-full bg-[#F6FBF4] outline-none focus:outline-none">
                   {/*header*/}
                   <div className="flex items-start justify-between pt-3 pl-5 rounded-t">
-                    <h3 className="text-xl font-semibold">Modal Title</h3>
+                    <h3 className="text-xl text-gray-700 font-semibold">Modal Title</h3>
                     <button
                       className="pr-2 ml-auto bg-transparent border-0 text-black opacity-5 float-right text-3xl leading-none font-semibold outline-none focus:outline-none"
                       onClick={() => setisOpen(false)}
@@ -97,7 +97,7 @@ function Features() {
               </div>
             </div>
             <div
-              className="opacity-5 w-full h-full fixed z-40 bg-gray-300 cursor-pointer"
+              className="opacity-5 inset-0 fixed z-40 cursor-pointer"
               onClick={() => setisOpen(false)}
             ></div>
           </>
@@ -111,7 +111,7 @@ function Features() {
     <section className="relative">
       {/* Section background (needs .relative class on parent and next sibling elements) */}
       <div
-        className="absolute inset-0 bg-gray-100 pointer-events-none mb-16"
+        className="absolute inset-0 bg-[#2C3333] pointer-events-none mb-16"
         aria-hidden="true"
       ></div>
       <div className="absolute left-0 right-0 m-auto w-px p-px h-20 bg-gray-200 transform -translate-y-1/2"></div>

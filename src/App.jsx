@@ -20,7 +20,7 @@ function App() {
     AOS.init({
       once: true,
       disable: 'phone',
-      duration: 700,
+      duration: 900,
       easing: 'ease-out-cubic',
     });
   });

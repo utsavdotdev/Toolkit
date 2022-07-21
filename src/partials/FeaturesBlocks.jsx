@@ -5,31 +5,31 @@ function FeaturesBlocks() {
     {
       icon:<BiSearchAlt size={28} color="#fff" />,
       name: "Explore",
-      des: "You can explore awesome tools which helps you in incredible way.",
+      des: "Explore awesome tools which helps you in incredible way.",
     },
     {
       icon:<BiCheck size={30} color="#fff"/>,
       name: "Simple",
-      des: "Toolkit is the simple and steady web portal.",
+      des: "Toolkit is the simple web portal which provides user friendly environment.",
     },
     {
       icon:<BiAnalyse size={28} color="#fff"/>,
       name: "Up to Date",
-      des: "Daily new tool is added on our's web verse.",
+      des: "Daily new tool is added on our's Web tool verse. ",
     },
   ];
   const ServiceCard = ({ data }) => {
     const { name, des,icon } = data;
     return (
       <>
-        <div className="relative flex flex-col items-center p-6 bg-white rounded shadow-xl">
-          <div className="flex items-center justify-center w-12 h-12 mt-1 mb-2 bg-blue-700 rounded-full">
+        <div className="relative flex flex-col items-center p-6 bg-[#2C3639] rounded shadow-xl">
+          <div className="flex items-center justify-center w-12 h-12 mt-1 mb-2 bg-gradient-to-r from-blue-500 to-teal-400 rounded-full">
             {icon}
           </div>
           <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">
             {name}
           </h4>
-          <p className="text-gray-600 text-center">{des}</p>
+          <p className="text-gray-400 text-center">{des}</p>
         </div>
       </>
     );
