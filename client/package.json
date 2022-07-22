@@ -1,6 +1,7 @@
 {
   "name": "Tool-Kit",
   "version": "0.1.0",
+  "description": "ToolKit is the Webverse which helps you to find the awesome Web Tools created by creative developer.",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
