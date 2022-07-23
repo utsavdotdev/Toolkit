@@ -71,10 +71,18 @@
 .badgeWrapper {
   @apply absolute bottom-0 left-0 -mb-4 ml-3 flex flex-row;
 }
-.hide-scroll-bar {
-  -ms-overflow-style: none;
-  scrollbar-width: none;
+::-webkit-scrollbar {
+  width: 10px;
+  height:10px;
 }
-.hide-scroll-bar::-webkit-scrollbar {
-  display: none;
+::-webkit-scrollbar-track{
+  background:#313c3f;
+  margin-left: 18px;
+  border-radius: 100vw;
+  margin-block: 5px;
+}
+::-webkit-scrollbar-thumb{
+  background: linear-gradient(90deg, rgba(40,177,131,1) 30%, rgba(0,212,255,1) 100%);
+  border-radius: 100vw;
+  border: 1px solid #313c3f;
 }

@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { BiX } from "react-icons/bi";
 
 function Features() {
   const [isOpen, setisOpen] = useState(false);
@@ -43,6 +44,7 @@ function Features() {
       title: "Tool 10",
       img: "https://bit.ly/3BQdTqk",
     },
+    
   ];
 
   const Card = ({ data }) => {
@@ -63,22 +65,22 @@ function Features() {
             <div className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-5 z-50 outline-none focus:outline-none">
               <div className="relative w-auto my-2 mx-auto max-w-sm">
                 {/*content*/}
-                <div className="border-0 rounded-lg relative flex flex-col w-full bg-[#F6FBF4] outline-none focus:outline-none">
+                <div className="border-0 rounded-lg relative flex flex-col w-full bg-[#313c3f] outline-none focus:outline-none">
                   {/*header*/}
                   <div className="flex items-start justify-between pt-3 pl-5 rounded-t">
-                    <h3 className="text-xl text-gray-700 font-semibold">Modal Title</h3>
+                    <h3 className="text-xl text-gray-200 font-semibold">Modal Title</h3>
                     <button
-                      className="pr-2 ml-auto bg-transparent border-0 text-black opacity-5 float-right text-3xl leading-none font-semibold outline-none focus:outline-none"
+                      className="pr-3 ml-auto border-0 float-right text-2xl leading-none"
                       onClick={() => setisOpen(false)}
                     >
-                      <span className="text-black h-6 w-6 text-2xl block outline-none focus:outline-none">
-                        ×
+                      <span className="h-6 w-6">
+                        <BiX color={"#dfdfdf"}/>
                       </span>
                     </button>
                   </div>
                   {/*body*/}
                   <div className="relative px-6 py-4 flex-auto">
-                    <p className="text-slate-500 text-md leading-relaxed">
+                    <p className="text-slate-300 text-md leading-relaxed">
                       It is used for editing the photo,video etc and helps to
                       remove background..
                     </p>
@@ -86,7 +88,7 @@ function Features() {
                   {/*footer*/}
                   <div className="flex items-center justify-center pb-2">
                     <button
-                      className="bg-gradient-to-r from-blue-500 to-teal-400 text-white font-bold uppercase text-sm px-4 py-2 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1"
+                      className="bg-gradient-to-r from-blue-500 to-teal-400 text-white font-bold uppercase text-sm px-4 py-2 rounded shadow outline-none mr-1 mb-1"
                       type="button"
                       onClick={() => setisOpen(false)}
                     >
@@ -96,11 +98,7 @@ function Features() {
                 </div>
               </div>
             </div>
-            <div
-              className="opacity-5 inset-0 fixed z-40 cursor-pointer"
-              onClick={() => setisOpen(false)}
-            ></div>
-          </>
+            </>
         ) : (
           ""
         )}
@@ -117,20 +115,20 @@ function Features() {
       <div className="absolute left-0 right-0 m-auto w-px p-px h-20 bg-gray-200 transform -translate-y-1/2"></div>
 
       <div className="relative mx-auto px-4 sm:px-6">
-        <div className="pt-10 md:pt-20">
+        <div className="pt-10 md:pt-20"> 
           {/* Section header */}
-          <div className="max-w-3xl mx-auto text-center pb-8 md:pb-14">
+          <div className="max-w-3xl mx-auto text-center pb-8 pt-6 md:pb-14">
             <h1 className="h2">Tools</h1>
             <p className="text-xl text-gray-600"></p>
           </div>
 
           {/* Section content */}
-          <div className="flex overflow-x-scroll hide-scroll-bar my-2 p-4 space-x-6 rounded-xl">
+          <div className="flex overflow-x-scroll design-scroll-bar my-2 p-4 space-x-6 rounded-xl">
             {data.map((data, index) => (
               <Card key={index} data={data} />
             ))}
           </div>
-          <div className="flex overflow-x-scroll hide-scroll-bar my-4 p-4 space-x-6 rounded-xl">
+          <div className="flex overflow-x-scroll design-scroll-bar my-4 p-4 space-x-6 rounded-xl">
             {data.map((data, index) => (
               <>
                 <Card key={index} data={data} />

@@ -22,14 +22,14 @@ function FeaturesBlocks() {
     const { name, des,icon } = data;
     return (
       <>
-        <div className="relative flex flex-col items-center p-6 bg-[#2C3639] rounded shadow-xl">
+        <div className="relative flex flex-col items-center p-6 bg-[#2C3639] rounded-xl shadow-xl cursor-pointer transform transition duration-500 hover:scale-105">
           <div className="flex items-center justify-center w-12 h-12 mt-1 mb-2 bg-gradient-to-r from-blue-500 to-teal-400 rounded-full">
             {icon}
           </div>
           <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">
             {name}
           </h4>
-          <p className="text-gray-400 text-center">{des}</p>
+          <p className="text-gray-400 text-center hover:text-gray-300">{des}</p>
         </div>
       </>
     );
