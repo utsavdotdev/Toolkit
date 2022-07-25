@@ -5,7 +5,8 @@
   "type":"module",
   "main": "index.js",
   "scripts": {
-    "server": "nodemon server.js"
+    "server": "nodemon server.js",
+    "seed":"nodemon seed/seed.js"
   },
   "keywords": [],
   "author": "Utsav Bhattarai",

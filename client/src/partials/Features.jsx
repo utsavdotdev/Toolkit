@@ -1,50 +1,88 @@
-import React, { useState } from "react";
-import { BiX } from "react-icons/bi";
+import React, { useState, useRef } from "react";
+import { BiX, BiChevronLeft, BiChevronRight } from "react-icons/bi";
 
 function Features() {
   const [isOpen, setisOpen] = useState(false);
+
+  //setting up reference for scrolling the tool
+  const ref = useRef(null);
+  const scroll = (dir) => {
+    if (dir == "left") {
+      ref.current.scrollLeft -= 200;
+    } else if (dir == "right") {
+      ref.current.scrollLeft += 200;
+    }
+  };
+
   const data = [
-    {
-      title: "Tool 1",
-      img: "https://bit.ly/3BQdTqk",
-    },
-    {
-      title: "Tool 2",
-      img: "https://bit.ly/3CQFPvv",
-    },
-    {
-      title: "Tool 3",
-      img: "https://bit.ly/3BQdTqk",
-    },
-    {
-      title: "Tool 4",
-      img: "https://bit.ly/3CQKSwb",
-    },
-    {
-      title: "Tool 5",
-      img: "https://bit.ly/3CQFPvv",
-    },
-    {
-      title: "Tool 6",
-      img: "https://bit.ly/3BQdTqk",
-    },
-    {
-      title: "Tool 7",
-      img: "https://bit.ly/3CQFPvv",
-    },
-    {
-      title: "Tool 8",
-      img: "https://bit.ly/3BQdTqk",
-    },
-    {
-      title: "Tool 9",
-      img: "https://bit.ly/3CQFPvv",
-    },
-    {
-      title: "Tool 10",
-      img: "https://bit.ly/3BQdTqk",
-    },
-    
+    [
+      {
+        title: "Tool 1",
+        img: "https://bit.ly/3BQdTqk",
+      },
+      {
+        title: "Tool 2",
+        img: "https://bit.ly/3CQFPvv",
+      },
+      {
+        title: "Tool 3",
+        img: "https://bit.ly/3BQdTqk",
+      },
+      {
+        title: "Tool 4",
+        img: "https://bit.ly/3CQKSwb",
+      },
+      {
+        title: "Tool 5",
+        img: "https://bit.ly/3CQFPvv",
+      },
+      {
+        title: "Tool 6",
+        img: "https://bit.ly/3BQdTqk",
+      },
+      {
+        title: "Tool 7",
+        img: "https://bit.ly/3CQFPvv",
+      },
+      {
+        title: "Tool 8",
+        img: "https://bit.ly/3BQdTqk",
+      },
+    ],
+    [
+      {
+        title: "Tool 1",
+        img: "https://bit.ly/3BQdTqk",
+      },
+      {
+        title: "Tool 2",
+        img: "https://bit.ly/3CQFPvv",
+      },
+      {
+        title: "Tool 3",
+        img: "https://bit.ly/3BQdTqk",
+      },
+      {
+        title: "Tool 4",
+        img: "https://bit.ly/3CQKSwb",
+      },
+      {
+        title: "Tool 5",
+        img: "https://bit.ly/3CQFPvv",
+      },
+      {
+        title: "Tool 6",
+        img: "https://bit.ly/3BQdTqk",
+      },
+      {
+        title: "Tool 7",
+        img: "https://bit.ly/3CQFPvv",
+      },
+      {
+        title: "Tool 8",
+        img: "https://bit.ly/3BQdTqk",
+      },
+    ],
   ];
 
   const Card = ({ data }) => {
@@ -68,13 +106,15 @@ function Features() {
                 <div className="border-0 rounded-lg relative flex flex-col w-full bg-[#313c3f] outline-none focus:outline-none">
                   {/*header*/}
                   <div className="flex items-start justify-between pt-3 pl-5 rounded-t">
-                    <h3 className="text-xl text-gray-200 font-semibold">Modal Title</h3>
+                    <h3 className="text-xl text-gray-200 font-semibold">
+                      Modal Title
+                    </h3>
                     <button
                       className="pr-3 ml-auto border-0 float-right text-2xl leading-none"
                       onClick={() => setisOpen(false)}
                     >
                       <span className="h-6 w-6">
-                        <BiX color={"#dfdfdf"}/>
+                        <BiX color={"#dfdfdf"} />
                       </span>
                     </button>
                   </div>
@@ -98,7 +138,7 @@ function Features() {
                 </div>
               </div>
             </div>
-            </>
+          </>
         ) : (
           ""
         )}
@@ -115,7 +155,7 @@ function Features() {
       <div className="absolute left-0 right-0 m-auto w-px p-px h-20 bg-gray-200 transform -translate-y-1/2"></div>
 
       <div className="relative mx-auto px-4 sm:px-6">
-        <div className="pt-10 md:pt-20"> 
+        <div className="pt-10 md:pt-20">
           {/* Section header */}
           <div className="max-w-3xl mx-auto text-center pb-8 pt-6 md:pb-14">
             <h1 className="h2">Tools</h1>
@@ -123,18 +163,25 @@ function Features() {
           </div>
 
           {/* Section content */}
-          <div className="flex overflow-x-scroll design-scroll-bar my-2 p-4 space-x-6 rounded-xl">
-            {data.map((data, index) => (
-              <Card key={index} data={data} />
-            ))}
-          </div>
-          <div className="flex overflow-x-scroll design-scroll-bar my-4 p-4 space-x-6 rounded-xl">
-            {data.map((data, index) => (
-              <>
+
+          {data.map((data, i) => (
+            <div
+              className="flex items-center overflow-x-scroll smooth-behaviour design-scroll-bar my-4 p-4 space-x-6 rounded-xl"
+              ref={ref}
+              key={i}
+            >
+              {/* <div className="nextBtn" onClick={() => scroll("right")}>
+                <BiChevronRight size={25} />{" "}
+              </div> */}
+
+              {data.map((data, index) => (
                 <Card key={index} data={data} />
-              </>
-            ))}
-          </div>
+              ))}
+              {/* <div className="PreBtn">
+                <BiChevronLeft size={25} onClick={() => scroll("left")} />
+              </div> */}
+            </div>
+          ))}
         </div>
       </div>
     </section>
