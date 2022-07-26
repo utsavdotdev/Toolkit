@@ -1,6 +1,5 @@
-
-export const dropToolSQL = 'DROP TABLE  IF EXISTS tools';
-export const insertToolSQL = 'INSERT INTO tools (name,des,link,image) VALUES ?';
+export const dropToolSQL = "DROP TABLE  IF EXISTS tools";
+export const insertToolSQL = "INSERT INTO tools (name,des,link,image) VALUES ?";
 
 export const createToolTableSQL = `CREATE TABLE tools (
     id INT NOT NULL AUTO_INCREMENT,
