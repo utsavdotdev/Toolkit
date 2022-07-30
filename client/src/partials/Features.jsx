@@ -120,7 +120,7 @@ function Features() {
   //Getting tools from api
   const getTools = () => {
     axios
-      .get(`http://localhost:3001/tools`)
+      .get(`http://localhost:3001/api/tools`)
       .then((res) => {
         setTools(res.data);
         setLoading(false);

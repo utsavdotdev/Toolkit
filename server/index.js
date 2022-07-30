@@ -11,7 +11,7 @@ dotenv.config();
 
 //Middleware
 app.use(express.json()); // for using json data
-app.use(cors()); //For checking the incoming request
+app.use(cors("*")); //For checking the incoming request
 
 // API's Endpoints
 app.get("/", (req, res) => {
@@ -19,7 +19,7 @@ app.get("/", (req, res) => {
 });
 
 //Endpoint to get all tools
-app.get("/tools", async (req, res) => {
+app.get("/api/tools", async (req, res) => {
   try {
     //Database connection
     const connection = await mysql.createConnection(process.env.DATABASE_URL);
@@ -32,7 +32,7 @@ app.get("/tools", async (req, res) => {
 });
 
 //Endpoint to post tool
-app.post("/tools", async (req, res) => {
+app.post("/api/tools", async (req, res) => {
   try {
     //Database connection
     const connection = await mysql.createConnection(process.env.DATABASE_URL);
