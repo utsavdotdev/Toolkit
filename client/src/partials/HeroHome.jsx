@@ -32,10 +32,10 @@ function HeroHome() {
               <p className="text-xl text-gray-400 mb-8" data-aos="zoom-y-out" data-aos-delay="150">ToolKit is the Webverse which helps you to find the awesome Web Tools created by creative developer.</p>
               <div className="max-w-xs mx-auto sm:max-w-none sm:flex sm:justify-center" data-aos="zoom-y-out" data-aos-delay="300">
                 <div>
-                  <a className="btn text-white bg-blue-600 hover:bg-blue-700 w-full mb-4 sm:w-auto sm:mb-0" href="#0">Let's Explore</a>
+                  <a className="btn text-white bg-blue-600 hover:bg-blue-700 w-full mb-4 sm:w-auto sm:mb-0" href="">Let's Explore</a>
                 </div>
                 <div>
-                  <a className="btn text-white bg-gray-900 hover:bg-gray-800 w-full sm:w-auto sm:ml-4" href="#0">GitHub</a>
+                  <a className="btn text-white bg-gray-900 hover:bg-gray-800 w-full sm:w-auto sm:ml-4" href="https://github.com/utsavbhattarai007/Toolkit" target={"_blank"}>GitHub</a>
                 </div>
               </div>
             </div>

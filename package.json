@@ -6,7 +6,8 @@
   "main": "index.js",
   "scripts": {
     "server": "node index.js",
-    "seed":"node seed/seed.js"
+    "seed":"node seed/seed.js",
+    "heroku-postbuild": "cd client && npm install && npm run build"
   },
   "keywords": [],
   "author": "Utsav Bhattarai",

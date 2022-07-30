@@ -26,49 +26,6 @@ function Features() {
       ref2.current.scrollLeft += 200;
     }
   };
-
-  const data = [
-    {
-      name: "Tool 1",
-      img: "https://bit.ly/3BQdTqk",
-      des: "This app is awesome hello hi yatayjaas,mkbsba,nba,jsa",
-    },
-    {
-      name: "Tool 2",
-      img: "https://bit.ly/3CQFPvv",
-      des: "This app is awesome hello hi yatayjaas,mkbsba,nba,jsa",
-    },
-    {
-      name: "Tool 3",
-      img: "https://bit.ly/3BQdTqk",
-      des: "This app is awesome hello hi yatayjaas,mkbsba,nba,jsa",
-    },
-    {
-      name: "Tool 4",
-      img: "https://bit.ly/3CQKSwb",
-      des: "This app is awesome hello hi yatayjaas,mkbsba,nba,jsa",
-    },
-    {
-      name: "Tool 5",
-      img: "https://bit.ly/3CQFPvv",
-      des: "This app is awesome hello hi yatayjaas,mkbsba,nba,jsa",
-    },
-    {
-      name: "Tool 6",
-      img: "https://bit.ly/3BQdTqk",
-      des: "This app is awesome hello hi yatayjaas,mkbsba,nba,jsa",
-    },
-    {
-      name: "Tool 7",
-      img: "https://bit.ly/3CQFPvv",
-      des: "This app is awesome hello hi yatayjaas,mkbsba,nba,jsa",
-    },
-    {
-      name: "Tool 8",
-      img: "https://bit.ly/3BQdTqk",
-      des: "This app is awesome hello hi yatayjaas,mkbsba,nba,jsa",
-    },
-  ];
   const Modal = ({ name, des, link }) => {
     return (
       <>
