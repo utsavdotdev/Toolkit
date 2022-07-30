@@ -61,7 +61,7 @@
 }
 
 .textWrapper {
-  @apply pt-5 pb-4 w-full px-4;
+  @apply pt-3 pb-3 w-full px-4;
 }
 
 .text {
@@ -86,6 +86,7 @@
   border-radius: 100vw;
   border: 1px solid #313c3f;
 }
+
 .PreBtn,
 .nextBtn{
   width:30px;
@@ -113,4 +114,10 @@
 }
 .PreBtn{
   left:10px
+}
+@media only screen and (max-width: 600px) {
+  .PreBtn,
+.nextBtn{
+  display: none;
+}
 }
