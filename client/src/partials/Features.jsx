@@ -77,7 +77,7 @@ function Features() {
   //Getting tools from api
   const getTools = () => {
     axios
-      .get(`http://localhost:3001/api/tools`)
+      .get(`/api/tools`)
       .then((res) => {
         setTools(res.data);
         setLoading(false);
@@ -98,7 +98,7 @@ function Features() {
           onClick={() => getData(data.name, data.des, data.link)}
         >
           <div className="header">
-            {data.image ? (
+            {data.image != null ? (
               <div className="imageWrapper">
                 <img src={data.image} className="image" alt="" />
               </div>

@@ -2,13 +2,14 @@
   "name": "server",
   "version": "1.0.0",
   "description": "ToolKit is the Webverse which helps you to find the awesome Web Tools created by creative developer.",
-  "type":"module",
+  "type": "module",
   "main": "index.js",
   "scripts": {
     "server": "node index.js",
-    "seed":"node seed/seed.js",
-    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false cd client && npm install && npm run build"
+    "seed": "node seed/seed.js",
+    "heroku-postbuild": "cd client && npm install && npm run build"
   },
+  "proxy": "http://localhost:5000",
   "keywords": [],
   "author": "Utsav Bhattarai",
   "license": "MIT",
@@ -22,7 +23,6 @@
     "nodemon": "^2.0.19"
   },
   "engines": {
-    "node": "<=16.x.x",
-    "npm": "<=7.x.x"
+    "node": "16.15.1"
   }
 }
