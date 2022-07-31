@@ -6,10 +6,8 @@
   "main": "index.js",
   "scripts": {
     "server": "node index.js",
-    "seed": "node seed/seed.js",
-    "heroku-postbuild": "cd client && npm install && npm run build"
+    "seed": "node seed/seed.js"
   },
-  "proxy": "http://localhost:5000",
   "keywords": [],
   "author": "Utsav Bhattarai",
   "license": "MIT",
