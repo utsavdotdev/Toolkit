@@ -77,7 +77,7 @@ function Features() {
   //Getting tools from api
   const getTools = () => {
     axios
-      .get('https://toolkit007.herokuapp.com/api/tools')
+      .get("https://toolkit007.herokuapp.com/")
       .then((res) => {
         setTools(res.data);
         setLoading(false);

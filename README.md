@@ -1,7 +1,6 @@
 # Introducing ToolKit
 
-As the name says, [ToolKit](Link) is the collection of bunch of Web tools that help us.
-ToolKit provides user friendly environment with the simple and cool features. The main focus of this app is to boost up the unknown web tools. 
+As the name says, [ToolKit](https://tool-kit.netlify.app/) is the collection of bunch of Web tools that help us.ToolKit provides user friendly environment with the simple and cool features. The main focus of this app is to boost up the unknown web tools. 
 
 Personally, In this webverse, There are millions of useful unknown web tool but are neglected by the google. As a result, They are not ranked in google search box.
 Due to which This tools are placed in the bottom of the web where we can't found them.
@@ -16,8 +15,8 @@ Due to which This tools are placed in the bottom of the web where we can't found
 
 # Links 🔗
 
-**Site:  [ToolKit](https://www.tool-kit.live)**
+**Site:  [ToolKit](https://tool-kit.netlify.app/)**
 
-**Source code:  [Github](Link)**
+**Source code:  [Github](https://github.com/utsavbhattarai007/Toolkit)**
 
 Thanks [Hashnode](https://hashnode.com) and [Plantscale](https://planetscale.com) for the awesome event.
