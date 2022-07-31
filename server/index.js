@@ -57,12 +57,3 @@ const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {
   console.log(`The app is listening in the port ${PORT}`.white);
 });
-
-// Serve static assets if in production
-if (process.env.NODE_ENV === "production") {
-  // Set static folder
-  app.use(express.static("client/dist"));
-
-  app.get("/*", (req, res) => {
-    res.sendFile(path.resolve(__dirname, "client", "dist", "index.html"));
-  })}
